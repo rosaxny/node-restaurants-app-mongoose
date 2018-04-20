@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: KITmRC4Lw5/vSVuuy3CJkAG/ZOTn7JcUaUkW3yfh4CJoyTyyNgAL184/s10XYbyntpELF9MX5vtf11Dy3b1zOXGLgnM/9SN3xutRdnrfEiQHO8P5JYlcH3oGCyJ5xevp5XBCqvXkRVeK4qExKfEc5aVh5/rOPvzbXbYeFRGBYwvybrdtSW/d0STDEsdODkHkHscJeeXNNzaVNzAge9kotoFhINIRtsuJvEvXpdAFIeKnp+wX/4pQJFeyR9R/zijeZBiSuEPc2mzPbYlL357KNP39JGEDZIMn05WrPY8FiQ5XX/gnNNq+y1AGV0Xgd8eSSjWwcNDeA1BRymiCW/x/QAZ7f7QMXb3JiXnLHK0i0s6aAF2isw/aXJJnhsZCuRjQmlQT01dmsp8y/Symvs1kCpZAOXCkn0vHfxmOCWEZcpKxtUEfFx4pqPEYs/K+XkRsy/9Vb/FK4ldPKy+RMG9jPurnQ+LLRtT0FyjtNyKlTy/8iosbkBt5leOyENT8UbErfG1J9+dkVAB0tvWe2bNPOtnaGY567YohdM7SuacXlQ/6uXAjHUpxSI3b78xgVdHX9jTG4UuYPBNpsOLmNY32eSJU2spOrP4mDMrO7KwCqgUamOYxB7zjn9Rfk01DR8c3mT0QpSAvdeAj6elmG8Pe/4Lcm/pacHR0b8b3q45zZns=
+  app: immense-fjord-33701
+  on:
+    repo: rosaxny/node-restaurants-app-mongoose
+    branch: feature/with-tests
